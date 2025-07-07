@@ -43,12 +43,16 @@ li:hover {
 }
 footer {
     background-color: rgb(69, 108, 180);
-text-align: center;
-padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 button {
-    color: rgb(0, 32, 100);
+    color:  rgb(69, 108, 180);
+    border: 2px solid rgb(69, 108, 180);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
 }
 
 header img {
@@ -61,4 +65,15 @@ p {
 
 strong {
     color:rgb(0, 32, 100); 
+}
+
+body {
+    background-color: rgb(69, 108, 180);
+     margin: 10px;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
