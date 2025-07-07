@@ -1,7 +1,9 @@
 let mostraHTML = document.getElementById("mostraHTML");
 
+
 function cadastro() {
-   let nomeTime = prompt("Digite o nome do time").toUpperCase() 
+ 
+    let nomeTime = prompt("Digite o nome do time").toUpperCase() 
    mostraHTML.innerHTML += `<p>O time ${nomeTime} está cadastrado!</p>`
    
     let jogador1 = prompt("Digite o nome do Jogador 1:");
@@ -13,7 +15,12 @@ function cadastro() {
     let jogador3 = prompt("Digite o nome do Jogador 3:");
     let idade3 = prompt(`Digite a idade de ${jogador3}:`);
 
-   
+     
+   if (nomeTime > 4) {
+      alert("As 4 vagas de times já foram esgotadas!");
+      return;
+   }
+
     mostraHTML.innerHTML += `
         <div class="time">
             <h3>${nomeTime}</h3>
