@@ -3,8 +3,7 @@ let mostraHTML = document.getElementById("mostraHTML");
 
 function cadastro() {
  
-    let nomeTime = prompt("Digite o nome do time").toUpperCase() 
-   
+    let nomeTime = prompt("Digite o nome do time");
    
     let jogador1 = prompt("Digite o nome do Jogador 1:");
     let idade1 = Number(window.prompt("Digite a idade do jogador 1:"));
