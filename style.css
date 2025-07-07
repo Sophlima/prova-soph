@@ -13,7 +13,7 @@ h1 {
 
 h2 {
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(0, 32, 100);
 }
@@ -24,6 +24,23 @@ h3 {
 
 h4 {
     color: aliceblue;
+    font-size: 15px;
+    position: relative;
+    top: -8px;
+}
+
+h5{
+    color: rgb(0, 32, 100);;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+}
+
+h6{
+    color: aliceblue;
+    font-size: 20px;
+     position: relative;
+    top: -15px;
 }
 
 main {
@@ -61,8 +78,8 @@ button {
 header img {
     position: relative;
     left: -500px;
-    width: 140px;
-    top: -10px; 
+    width: 200px;
+    top: -20px; 
 }
 
 p {

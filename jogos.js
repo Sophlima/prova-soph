@@ -4,26 +4,26 @@ let mostraHTML = document.getElementById("mostraHTML");
 function cadastro() {
  
     let nomeTime = prompt("Digite o nome do time").toUpperCase() 
-   mostraHTML.innerHTML += `<p>O time ${nomeTime} está cadastrado!</p>`
+   
    
     let jogador1 = prompt("Digite o nome do Jogador 1:");
-    let idade1 = prompt(`Digite a idade de ${jogador1}:`);
+    let idade1 = Number(window.prompt("Digite a idade do jogador 1:"));
 
     let jogador2 = prompt("Digite o nome do Jogador 2:");
-    let idade2 = prompt(`Digite a idade de ${jogador2}:`);
+    let idade2 = Number(window.prompt("Digite a idade do jogador 2:"));
 
     let jogador3 = prompt("Digite o nome do Jogador 3:");
-    let idade3 = prompt(`Digite a idade de ${jogador3}:`);
+    let idade3 = Number(window.prompt("Digite a idade do jogaodor 3:"));
 
-     
-   if (nomeTime > 4) {
-      alert("As 4 vagas de times já foram esgotadas!");
-      return;
-   }
+    let media = (idade1 + idade2 + idade3) / 3;
+    if (media >= 15) {
+        alert("Incrição não válida!")
+        return;
+    }
 
     mostraHTML.innerHTML += `
-        <div class="time">
-            <h3>${nomeTime}</h3>
+          <h3>Time: ${nomeTime} Média de idade: ${media}</h3>
+    <div class="time">
             <ul>
                 <li><strong>${jogador1}, ${idade1}</strong> </li>
                 <li><strong>${jogador2}, ${idade2}</strong> </li>
